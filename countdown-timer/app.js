@@ -31,7 +31,7 @@ let tempYear = tempDate.getFullYear();
 let tempMonth = tempDate.getMonth();
 let tempDay = tempDate.getDate();
 
-let dateChange = new Date(tempYear, tempMonth, tempDay + 1,0,0,0) ;
+let dateChange = new Date(tempYear, tempMonth, tempDay + 30,3,30,0) ;
 var year = dateChange.getFullYear();
 var hour = dateChange.getHours();
 var min = dateChange.getMinutes();
