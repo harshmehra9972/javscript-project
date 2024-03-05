@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background changer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-div">
+    <h1>Background color changer</h1>
+    <input type="color" id="input">
+    <button id="red" class="colors" >Red</button>
+    <button id="green" class="colors">Green</button>
+    <button id="blue" class="colors">Blue</button>
+    <button id="grey" class="colors">Grey</button>
+</div>
+<p id="colorname"></p>
+
+
+</body>
+<script src="app.js"></script>
+</html>
+
+<script>
+  let decrease = document.getElementById('decrease');
+  let reset = document.getElementById('reset');
+  let increase = document.getElementById('increase');
+  let value = document.getElementById('value');
+  
+  let count = 0;
+  
+  decrease.addEventListener('click', function() {
+      count--;
+      updateCounter();    
+  });
+  
+  reset.addEventListener('click', function() {
+      count = 0;
+      updateCounter();
+  });
+  
+  increase.addEventListener('click', function() {
+      count++;
+      updateCounter();    
+  });
+  
+  function updateCounter() {
+      value.textContent = count;
+      if (count < 0) {
+          decrease.style.color = 'red';
+          increase.style.color = ''; // Reset color of increase button
+      } else if (count > 0) {
+          increase.style.color = 'green';
+          decrease.style.color = ''; // Reset color of decrease button
+      } else {
+          decrease.style.color = '';
+          increase.style.color = '';
+      }
+  }
+  
+  </script>

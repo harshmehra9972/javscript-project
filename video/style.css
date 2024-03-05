@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.preloader {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    z-index: 999;
+    transition: all 0.3s linear;
+}
+
+.hide-preloader {
+    z-index: -999;
+    visibility: hidden;
+}
+header {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+
+.video-contaner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.video-contaner h1 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 4rem;
+}
+
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000b3;
+    z-index: -1;
+}
+
+
+
+.switch-btn {
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    border-radius: 2rem;
+}
+
+.switch-btn span {
+    display: inline-block;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.switch {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #b9bfc3;
+    border-radius: 2rem;
+    transition: 1s;
+}
+
+ .slide  .switch {
+    left: 50%;
+ }

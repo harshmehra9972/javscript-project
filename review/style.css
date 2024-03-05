@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e6e0e0;
+}
+.underline {
+    width: 4rem;
+    height: 0.1rem;
+    background-color: skyblue;
+    margin: 1rem auto;
+}
+
+.img-contaner {
+    text-align: center;
+    margin: 1rem;
+}
+
+.img-contaner img {
+    width: auto;
+    height: 11rem;
+    border-radius: 50%;
+}
+
+.contaner {
+    width: 35%;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    box-shadow: 0 0.2rem 0.2rem #e6e0e0;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.title {
+    text-align: center;
+}
+
+.review {
+    justify-content: center;
+}
+
+#author {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+#job {
+    margin: 0.5rem 0;
+    text-align: center;
+    color: skyblue;
+}
+
+.button-contaner {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#info {
+    text-align: center;
+}
+
+.button-contaner button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.next-btn img {
+    width: 1rem;
+    height: 1rem;
+    rotate: 180deg;
+}
+
+.prv-btn img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.rbtn{
+    background-color: skyblue;
+    width: 5rem;
+    height: 1rem;
+    margin: 0.5rem auto 0 auto;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+
+.ren-btn {
+    border: 4px skyblue;
+    background-color: skyblue;
+    box-sizing: content-box;
+}
